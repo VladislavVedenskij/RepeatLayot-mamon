@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header {
+    width: 100%;
+    max-width: 1180px;
+    padding-top: 50px;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* ЛОГО  */
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo__pic {
+    display: block;
+    width: 58px;
+    height: 58px;
+    background-image: url(..//sources/svg/mamon-logo.svg);
+}
+
+.logo__text {
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 25px;
+    color: #202020;
+}
+
+/* Панель навигации  */
+.nav-list {
+    display: flex;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav__item{
+    list-style-type: none;
+    margin-left: 37px;
+}
+
+.nav__link {
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #202020;
+}
+
+.nav__button {
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #5528FF;
+    border-radius: 5px;
+    color: #FFFFFF;
+    border: none;
+}
+
+/*  Общие блоки для остальных wrap и page */
+.wrap {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.page {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+/* Первый блок основного содержания */
+
+.title-main {
+    font-size: 56px;
+    font-weight: 700;
+    color: #202020;
+}
+
+.text-main {
+    max-width: 741px;
+    margin-top: 15px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 51.48px;
+}
+
+.wrap__button {
+    padding: 16px 58px;
+    margin-top: 86px;
+    font-size: 24px;
+    font-weight: 400;
+    background-color: #5528FF;
+    border-radius: 5px;
+    color: #FFFFFF;
+    border: none;
+}
+
+/* Сетка с сервисами */
+
+
+.page-top {
+    border-top: 1px solid #C2C2C2;
+}
+
+.services {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+.title-services {
+    position: absolute;
+    top: -24px;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #C2C2C2;
+    background-color: #FFFFFF;   
+}
+
+        /* Блоки в сетке СЕРВИСЫ */
+
+        .services__item {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .services__img {
+            flex-basis: 100px;
+            text-align: center;
+        }
+        
+        .services__desc {
+            margin-left: 10px;
+            flex-basis: calc(100% - 100px);
+        }
+
+        .services__title {
+            font-size: 28px;
+            font-weight: 400;
+            color: #000000;
+        }
+        
+        .services__text {
+            font-size: 14px;
+            font-weight: 400;
+            color: #B2B2B2;
+            line-height: 16.09px;
+        }
+
+/* Блоки в сетке КЛИЕНТЫ */
+
+.clients {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.clients-item {
+    margin-bottom: 46px;
+}
+
+/* Блоки в сетке команды */
+
+.team {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 33%);
+    grid-row-gap: 50px;
+}
+
+.team__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.team__desc {
+    flex-basis: calc(100% - 100px);
+    
+    
+}
+
+.team__item>img {
+    width: 100px;
+    margin-right: 25px;
+}
+
+.team__desc>h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #202020;
+    margin-bottom: -5px;
+}
+
+.team__desc>p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #B2B2B2;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #F7F7F7;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-2 {
+    width: 100%;
+    max-width: 1180px;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.social {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.social>li {
+    margin-left: 40px;
+}
